@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS FMA</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="drat-container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>The Diabetes Risk Assessment Tool</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					How old are you?
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk1" class="diabetesRisk" id="diabetesRisk1" value="0" checked>
+							1-25
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk1" class="diabetesRisk" id="diabetesRisk2" value="5">
+							26-40
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk1" class="diabetesRisk" id="diabetesRisk3" value="8">
+							41-60
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk1" class="diabetesRisk" id="diabetesRisk4" value="10">
+							60+
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					What is your BMI?
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk2" class="diabetesRisk" id="diabetesRisk5" value="0" checked>
+							0-25
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk2" class="diabetesRisk" id="diabetesRisk6" value="0">
+							26-30
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk2" class="diabetesRisk" id="diabetesRisk7" value="9">
+							31-35
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk2" class="diabetesRisk" id="diabetesRisk8" value="10">
+							35+
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					Does anybody in your family have diabetes?
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk3" class="diabetesRisk" id="diabetesRisk9" value="0" checked>
+							No
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk3" class="diabetesRisk" id="diabetesRisk10" value="7">
+							Grandparent
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk3" class="diabetesRisk" id="diabetesRisk11" value="15">
+							Sibling
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk3" class="diabetesRisk" id="diabetesRisk12" value="15">
+							Parent
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					How would you describe your diet?
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk4" class="diabetesRisk" id="diabetesRisk13" value="0" checked>
+							Low sugar
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk4" class="diabetesRisk" id="diabetesRisk14" value="0">
+							Normal sugar
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk4" class="diabetesRisk" id="diabetesRisk15" value="7">
+							Quite high sugar?
+						</label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="radio">
+						<label>
+							<input type="radio" name="diabetesRisk4" class="diabetesRisk" id="diabetesRisk16" value="10">
+							High sugar
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-warning drat-submit">Calculate</button>
+				</div>
+			</div>
+		</div>
+		<div class="drat-container drat-message" style="display:none;">
+			<div class="drat-message1">
+				<h2>Low risk</h2>
+				<p>Your results show that you currently have a low risk of developing diabetes. However, it is important that you maintain a healthy lifestyle in terms of diet and exercise.</p>
+			</div>
+			<div class="drat-message2">
+				<h2>Medium risk</h2>
+				<p>Your results show that you currently have a medium risk of developing diabetes. For more information on your risk factors, and what to do about them, please visit our diabetes advice website at <a href="http://www.zha.org.zd">http://www.zha.org.zd</a>.</p>
+			</div>
+			<div class="drat-message3">
+				<h2>High risk</h2>
+				<p>Your results show that you currently have a HIGH risk of developing diabetes. <span class="drat-main-risks">Your main risk factor<span class="drat-plural-sing"></span> <span class="drat-reason"></span>.</span> We advise that you contact the Health Authority to discuss your risk factors as soon as you can. Please fill in our <a href="contactform.html">contact form</a> and a member of the Health Authority Diabetes Team will be in contact with you.</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="diabetestool.js"></script>
+</body>
+</html>
