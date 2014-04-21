@@ -85,6 +85,7 @@ $('document').ready(function() {
 				 * a bit more future proof if the number values change
 				 * for instance, change one of the values to 26 in the html radio
 				 * button value then select it and press calculate */
+                // could use join instead, something like var str = a.slice(0, -1).join(',')+' or '+a.slice(-1);
 				$.each(biggerThenTen, function(index, value) {
 
 					// we need to add the word your before each risk cause
